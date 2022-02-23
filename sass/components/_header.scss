@@ -2,12 +2,6 @@
   border-bottom: 1px solid #ececec;
 }
 
-.header__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .block-logo {
   display: flex;
   align-items: center;
@@ -51,7 +45,7 @@
 }
 
 .site-nav__link--current::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -1px;
