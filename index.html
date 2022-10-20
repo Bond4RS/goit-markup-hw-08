@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ua">
   <head class="head">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,114 +20,136 @@
     <!---Шапка сайта-->
     <header class="header">
       <div class="header__container container">
+         <a href="/" class="logo"> <span class="logo__accent">Web</span>Studio</a>
+           <button type="button" class="menu-toggle js-open-menu"
+                  aria-expanded="false"
+                  aria-controls="mobile-menu">
+                  <svg 
+                  width="40" height="40" aria-label="switch mobile menu"> 
+                    <use class="icon-menu" href="./images/icons.svg#burger"></use>
+                  </svg>
+            </button>
+      <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <button type="button" class="menu-close-button js-close-menu">
+          <use class="icon-cross" href="./images/icons.svg#icon-cross"  width="40" height="40"></use>
+        </button>
         <nav class="block-logo">
-          <a href="/" class="logo"> <span class="logo__accent">Web</span>Studio</a>
           <ul class="site-nav">
             <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a>
+              <a href="./index.html" class="site-nav__link site-nav__link--current">Студія</a>
             </li>
             <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+              <a href="./portfolio.html" class="site-nav__link">Портфоліо</a>
             </li>
-            <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
+            <li class="site-nav__item"><a href="" class="site-nav__link">Контакти</a></li>
           </ul>
         </nav>
         <ul class="auth-nav">
           <li class="auth-nav__item">
-            <a href="mailto:info@devstudio.com" class="auth-nav__link">
+            <a href="mailto:info@devstudio.com" class="auth-nav__link auth-nav__mail">
               <svg class="auth-nav__icon" width="16" height="12">
   <use href="./images/icons.svg#icon-envelope"></use>
 </svg> info@devstudio.com</a>
           </li>
           <li class="auth-nav__item">
-            <a href="tel:+380961111111" class="auth-nav__link">
+            <a href="tel:+380961111111" class="auth-nav__link auth-nav__tel">
               <svg  class="auth-nav__icon" width="10" height="16">
   <use href="./images/icons.svg#icon-phone"></use>
 </svg> +380961111111</a>
           </li>
         </ul>
+        <ul class="socialtext-list list">
+          <li class="socialtext-list__item">
+            <a class="socialtext-list__link" href="/">Instagram</a>
+          </li>
+          <li class="socialtext-list__item">
+            <a class="socialtext-list__link" href="/">Twitter</a>
+          </li>
+          <li class="socialtext-list__item">
+            <a class="socialtext-list__link" href="/">Facebook</a>
+          </li>
+          <li class="socialtext-list__item">
+            <a class="socialtext-list__link" href="/">LinkedIn</a>
+          </li>
+        </ul>
+</div>
       </div>
     </header>
-
     <main>
  
       <!-- Герой -->
 <section class="hero block"> 
     <div class="container"> 
         <h1 class="hero__title">
-          ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br />
-          ДЛЯ ВАШЕГО БИЗНЕСА
+          ЕФЕКТИВНІ РІШЕННЯ <br />
+          ДЛЯ ВАШОГО БІЗНЕСУ
         </h1>
-        <button type="button" class="hero__button button" data-modal-open>Заказать услугу</button>
+        <button type="button" class="hero__button button" data-modal-open>Замовити послугу</button>
     </div>
 </section>
 
-      <!-- Наши преимущества -->
+      <!-- Наші переваги -->
      <section class="section block"> <div class="container"> 
-        <h2 class="sectionn-title visually-hidden">Наши преимущества</h2>
+        <h2 class="sectionn-title visually-hidden">Наші переваги</h2>
         <ul class="feature">
           <li class="feature__item">
             <div class="feature__thumb"> <svg class="feature__icon" width="70" height="70">
               <use href="./images/icons.svg#icon-antenna"></use>
             </svg>
 </div>
-            <h3 class="feature__title">Внимание к деталям</h3>
-<p class="feature__descrip">Идейные соображения, а также начало повседневной работы по
-              формированию позиции.</p> 
+            <h3 class="feature__title">Увага до деталей</h3>
+<p class="feature__descrip">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p> 
           </li>
           <li class="feature__item">
                         <div class="feature__thumb">            <svg class="feature__icon" width="70" height="70">
               <use href="./images/icons.svg#icon-clock"></use>
             </svg>
 </div>
-            <h3 class="feature__title">Пунктуальность</h3>
-<p class="feature__descrip">Задача организации, в особенности же рамки и место обучения
-              кадров влечет за собой.</p> 
+            <h3 class="feature__title">Пунктуальність</h3>
+<p class="feature__descrip">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p> 
           </li>
           <li class="feature__item">
             <div class="feature__thumb">            <svg class="feature__icon" width="70" height="70">
               <use href="./images/icons.svg#icon-diagram"></use>
             </svg>
 </div>
-            <h3 class="feature__title">Планирование</h3>
-<p class="feature__descrip">Равным образом консультация с широким активом в значительной
-              степени обуславливает.</p> 
+            <h3 class="feature__title">Планування</h3>
+<p class="feature__descrip">Так само консультація з широким активом значною мірою зумовлює.</p> 
           </li>
           <li class="feature__item">
             <div class="feature__thumb">            <svg class="feature__icon" width="70" height="70">
               <use href="./images/icons.svg#icon-astronaut"></use>
             </svg>
 </div>
-            <h3 class="feature__title">Современные технологии</h3>
-<p class="feature__descrip">Значимость этих проблем настолько очевидна, что реализация
-              плановых заданий.</p> 
+            <h3 class="feature__title">Сучасні технології</h3>
+<p class="feature__descrip">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p> 
           </li>
         </ul>
       </div> </section>
  
-      <!-- Чем мы занимаемся -->
+      <!-- Чим ми займаємось -->
 <section class="section section--nopadding-top">
             <div class="container">
 
-        <h2 class="section__title section__ttitle-margin-bottom">Чем мы занимаемся</h2>
+        <h2 class="section__title section__ttitle-margin-bottom">Чим ми займаємось</h2>
                     <ul class="works">
                         <li class="works__item">
                           <div class="works__meta">
-                            <h3 class="works__name">десктопные приложения</h3>
+                            <h3 class="works__name">десктопні додатки</h3>
                           </div>
                             <img src="./images/img1.jpeg" alt="верстка сайта" width="370" />
                         </li>
                         <li class="works__item">
                            <div class="works__meta">
-                            <h3 class="works__name">мобильные приложения</h3>
+                            <h3 class="works__name">мобільні додатки</h3>
                           </div>
-                            <img src="./images/img2.jpeg" alt="адаптация сайта" width="370" />
+                            <img src="./images/img2.jpeg" alt="адаптація сайту" width="370" />
                         </li>
                         <li class="works__item">
                            <div class="works__meta">
-                            <h3 class="works__name">дизайнерские решения</h3>
+                            <h3 class="works__name">дизайнерські рішення</h3>
                           </div>
-                            <img src="./images/img3.jpeg" alt="выбор цвета оформление" width="370" />
+                            <img src="./images/img3.jpeg" alt="вибір оформлення" width="370" />
                         </li>
                     </ul>
           </div>
@@ -138,8 +160,8 @@
         <h2 class="section__title">Наша команда</h2>
         <ul class="team">
             <li class="team__item">
-                <img src="./images/img4.jpeg" alt="бородатый чувак в очках" class="thumb__img">
-                <div class="team__thumb"><h3 class="team__title">Игорь Демьяненко</h3>
+                <img src="./images/img4.jpeg" alt="член команди" class="thumb__img">
+                <div class="team__thumb"><h3 class="team__title">Ігор Дем'яненко</h3>
                 <p class="team__text">Product Designer</p>
                 <ul class="socialnet">
                   <li class="socialnet__item"><a class="socialnet__link" href="">
@@ -166,8 +188,8 @@
               
             </li>
             <li class="team__item">
-                <img src="./images/img5.jpeg" alt="симпатичная блондинка в очках" class="thumb__img">
-                <div class="team__thumb"><h3 class="team__title">Ольга Репина</h3>
+                <img src="./images/img5.jpeg" alt="член команди" class="thumb__img">
+                <div class="team__thumb"><h3 class="team__title">Ольга Рєпіна</h3>
                 <p class="team__text">Frontend Developer</p>
                 <ul class="socialnet">
                   <li class="socialnet__item"><a class="socialnet__link" href="">
@@ -193,8 +215,8 @@
                 </ul></div>
             </li>
             <li class="team__item">
-                <img src="./images/img6.jpeg" alt="молодой человек с трехдневной небритостью" class="thumb__img">
-                <div class="team__thumb"><h3 class="team__title">Николай Тарасов</h3>
+                <img src="./images/img6.jpeg" alt="член команди" class="thumb__img">
+                <div class="team__thumb"><h3 class="team__title">Микола Тарасов</h3>
                 <p class="team__text">Marketing</p>
                 <ul class="socialnet">
                   <li class="socialnet__item"><a class="socialnet__link" href="">
@@ -220,8 +242,8 @@
                 </ul></div>
             </li>
             <li class="team__item">
-                <img src="./images/img7.jpeg" alt="еще один бородатый в очках" class="thumb__img">
-                <div class="team__thumb"><h3 class="team__title">Михаил Ермаков</h3>
+                <img src="./images/img7.jpeg" alt="член команди" class="thumb__img">
+                <div class="team__thumb"><h3 class="team__title">Михайло Єрмаков</h3>
                 <p class="team__text">UI Designer</p>
                 <ul class="socialnet">
                   <li class="socialnet__item"><a class="socialnet__link" href="">
@@ -250,10 +272,10 @@
       </div> </section>
     </main>
 
-    <!-- Клиенты -->
+    <!-- Клієнти -->
     <section class="section block">
       <div class="container">
-        <h2 class="section__title">Постоянные клиенты</h2>
+        <h2 class="section__title">Постійні клієнти</h2>
         <ul class="customers">
           <li class="customers__item"><a class="customers__link" href=""><svg class="customers__icon" width="106" height="60"><use href="./images/icons.svg#icon-LogoCompany1"> </use> </svg></a></li>
           <li class="customers__item"><a class="customers__link" href=""><svg class="customers__icon" width="106" height="60"><use href="./images/icons.svg#icon-LogoCompany2"> </use> </svg></a></li>
@@ -279,7 +301,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  г. Киев, пр-т Леси Украинки, 26</a
+                  м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
               <li class="contacts__mail">
@@ -292,7 +314,7 @@
           </address>
         </div>
         <div class="socialnets">
-          <p class="socialnets__connect">присоединяйтесь</p>
+          <p class="socialnets__connect">приєднуйтесь</p>
           <ul class="nets-list">
             <li class="nets-list__item">
               <a class="nets-list__link" href=""
@@ -322,14 +344,14 @@
         </div>
         <div class="subs-box">        
           <form class="subscription-field">
-          <p class="mailing">подпишитесь на рассылку</p>
+          <p class="mailing">підпишіться на розсилку</p>
           <div class="mailing-box">
             <div class="mailing-field">
               <input type="email" class="mailing-form" name="mail" placeholder="E-mail" />
               <label for="mail" class="mailing-label"></label>
             </div>
             <button type="submit" class="button-subs button">
-              <span class="button-subs__name">Подписаться</span>
+              <span class="button-subs__name">Підписатися</span>
               <svg class="button-subs__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
@@ -340,7 +362,7 @@
       </div>
     </footer>
 
-        <!-- Модальное окно -->
+        <!-- Модальне вікно -->
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <button class="button-cross button" data-modal-close>
@@ -348,10 +370,10 @@
                 <use href="./images/icons.svg#icon-cross"></use>
               </svg>
             </button>
-            <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
+            <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
             <form class="modal__form">
           <div class="form-field">
-            <label for="user-name" class="modal-label">Имя</label>
+            <label for="user-name" class="modal-label">Ім'я</label>
             <span class="modal-input-wrap">
               <input
                 type="text"
@@ -385,7 +407,7 @@
           </div>
 
           <div class="form-field">
-            <label for="user-email" class="modal-label">Почта</label>
+            <label for="user-email" class="modal-label">Пошта</label>
               <span class="modal-input-wrap">
               <input
               type="email"
@@ -402,7 +424,7 @@
 
           </div>
           <div class="form-field coment">
-            <label for="user-text" class="modal-label">Комментарий</label>
+            <label for="user-text" class="modal-label">Коментар</label>
             <textarea
               name="user-text"
               id="user-text"
@@ -422,16 +444,22 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              Соглашаюсь с рассылкой и принимаю <a href="" class="link-contract">Условия договора</a>
+              Погоджуюся з розсилкою та приймаю <a href="" class="link-contract">Умови договору</a>
               </label>
           </div>
           <div class="box-btn">          
-            <button type="submit" class="button hero-button btn-send"> <span class="text-btn">Отправить</span> </button>
+            <button type="submit" class="button hero-button btn-send"> <span class="text-btn">Відправити</span> </button>
           </div>
         </form>
           </div>
         </div>
-
-<script src="./js/modal.js"></script>
+        <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"
+      ></script>
+      <script defer src="js/mobile-menu.js"></script>      
+      <script src="./js/modal.js"></script>
   </body>
 </html>
