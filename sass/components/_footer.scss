@@ -2,42 +2,95 @@
   padding: 60px 0;
   background-color: #2f303a;
   background-size: cover;
+  @media screen and (min-width: 1200px) {
+    padding: 60px 0;
+
+  }
 }
 
+
 .adress__box {
-  margin-right: 70px;
-  flex-grow: 1;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    flex-grow: 1;
+    }
+
+}
+
+.address {
+  @media screen and (max-width: 1199px) {
+margin-top: 20px;  
+  }
+
+}
+
+.contacts {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+
 }
 
 .contacts__map {
-  margin-bottom: 9px;
 
   color: var(--primary-white-color);
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
+
 }
 
 .contacts__address {
-  margin-bottom: 9px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .contacts__mail {
-  margin-bottom: 9px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
 .contacts__link {
-  text-decoration: none;
+ font-style: normal;
   color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+
+  @media screen and (max-width: 1199px) {
+    margin-top: 8px;  
+      }
+    
 }
 
 .socialnets {
-  display: block;
-  margin-right: 93px;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    margin-right: 93px;
+    }
+
 }
 
 .socialnets__connect {
@@ -51,6 +104,10 @@
   text-transform: uppercase;
 
   color: var(--primary-white-color);
+
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
 }
 
 .nets-list {
@@ -102,11 +159,16 @@
   text-transform: uppercase;
 
   color: #ffffff;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
+
 }
 
 .mailing-form {
   padding: 10px 20px;
-  width: 358px;
+  width: 450px;
   height: 50px;
   font: inherit;
 
@@ -115,10 +177,29 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: #2f303a;
   color: var(--primary-white-color);
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+
+  }
 }
 
 .mailing-box {
-  display: flex;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+}
+
+.subscription-field {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+
 }
 
 .button-subs {
@@ -142,6 +223,11 @@
   &:hover {
     background-color: #188ce8;
   }
+  
+  @media screen and (max-width: 1199px) {
+    margin-top: 20px;
+  }
+
 }
 
 .button-subs__name {

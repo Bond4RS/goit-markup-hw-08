@@ -1,5 +1,9 @@
-.item, a {
+.item {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 p,
@@ -24,10 +28,9 @@ ul  {
   list-style: none;
 }
 
-section,
-footer {
-  display: none;
-}
+// section {
+//   display: none;
+// }
 
 .block {
   display: block;
