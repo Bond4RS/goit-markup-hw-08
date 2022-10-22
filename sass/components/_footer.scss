@@ -14,7 +14,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  
   }
 
   @media screen and (min-width: 1200px) {
@@ -25,6 +24,7 @@
 }
 
 .address {
+  
   @media screen and (max-width: 1199px) {
 margin-top: 20px;  
   }
@@ -36,7 +36,11 @@ margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-  
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
 }
@@ -64,6 +68,9 @@ margin-top: 20px;
   @media screen and (min-width: 1200px) {
     margin-bottom: 9px;
   }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+margin: 8px 0;  }
+
 }
 
 .contacts__link {
@@ -78,6 +85,14 @@ margin-top: 20px;
     
 }
 
+.footer-tablet-box {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+}
+
 .socialnets {
   @media screen and (max-width: 767px) {
     display: flex;
@@ -86,6 +101,10 @@ margin-top: 20px;
   
   }
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 165px;  
+  }
+  
   @media screen and (min-width: 1200px) {
     display: block;
     margin-right: 93px;
@@ -108,6 +127,12 @@ margin-top: 20px;
   @media screen and (max-width: 767px) {
     margin-top: 60px;
   }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
 }
 
 .nets-list {
@@ -151,6 +176,15 @@ margin-top: 20px;
   fill: var(--primary-white-color);
 }
 
+.subs-box {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
+
+}
+
 .mailing {
   margin-bottom: 20px;
   font-weight: 700;
@@ -164,6 +198,11 @@ margin-top: 20px;
     margin-top: 60px;
   }
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 }
 
 .mailing-form {
@@ -177,9 +216,9 @@ margin-top: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: #2f303a;
   color: var(--primary-white-color);
+  
   @media screen and (min-width: 1200px) {
     width: 358px;
-
   }
 }
 
@@ -188,8 +227,14 @@ margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-  
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
 }
 
 .subscription-field {
@@ -197,9 +242,7 @@ margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-  
   }
-
 }
 
 .button-subs {
@@ -213,7 +256,6 @@ margin-top: 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: transparent;
-  cursor: pointer;
 
   background-color: var(--accent-color);
   color: var(--primary-white-color);
@@ -223,7 +265,10 @@ margin-top: 20px;
   &:hover {
     background-color: #188ce8;
   }
-  
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 20px;
+  }
+
   @media screen and (max-width: 1199px) {
     margin-top: 20px;
   }
