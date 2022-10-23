@@ -42,6 +42,12 @@
   display: flex;
   flex-wrap: wrap;
   text-decoration: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
 }
 
 .projects__link {
@@ -96,7 +102,7 @@
 .projects__card {
   display: block;
   position: relative;
-  width: 370px;
+  max-width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
   &:nth-child(3n) {
@@ -105,6 +111,19 @@
   &:nth-last-child(-n + 3) {
     margin-bottom: var(--primary-margin-bottom);
   }
+  @media screen and (min-width: 768px) {
+    margin: 15px;
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
 }
 
 .card-title__project {
