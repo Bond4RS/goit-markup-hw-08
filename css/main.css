@@ -426,17 +426,20 @@ img {
 
 @media screen and (max-width: 479px) {
   .auth-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .auth-nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -460,12 +463,6 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .auth-nav__item:not(:last-child) {
-    margin-right: 50px;
   }
 }
 
@@ -505,6 +502,7 @@ img {
     letter-spacing: 0.02em;
     margin-bottom: 32px;
     color: var(--accent-color);
+    padding-top: 315px;
   }
 }
 
@@ -1290,7 +1288,6 @@ img {
 
 .mailing-form {
   padding: 10px 20px;
-  width: 450px;
   height: 50px;
   font: inherit;
   border-radius: 4px;
@@ -1301,13 +1298,13 @@ img {
   color: var(--primary-white-color);
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
   .mailing-form {
-    width: 100%;
+    width: 270px;
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .mailing-form {
     width: 450px;
   }
