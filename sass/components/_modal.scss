@@ -171,6 +171,13 @@
   justify-content: center;
   font-size: 12px;
   line-height: calc(14 / 12);
+ 
+  @media screen and (max-width: 479px) {
+    font-size: 7px;
+    line-height: calc (8 / 6);
+    letter-spacing: 0.01em;
+  }
+
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: calc(24 / 14);
@@ -209,6 +216,9 @@
   display: inline-block;
   padding-left: 0.5em;
   color: var(--accent-color);
+  @media screen and (max-width: 479px) {
+padding: 0;  }
+
 }
 
 .box-btn {
@@ -230,6 +240,11 @@
   &:hover {
     background-color: #188ce8;
   }
+
+  @media screen and (max-width: 479px) {
+    max-width: 160px;
+    max-height: 36px;
+  }
 }
 
 .text-btn {
@@ -241,4 +256,12 @@
   letter-spacing: 0.06em;
 
   color: #ffffff;
+  @media screen and (max-width: 479px) {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(24 / 12);
+    letter-spacing: 0.03em;
+  
+    }
+
 }
