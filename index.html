@@ -37,7 +37,6 @@
           </svg>
 
         </button>
-        <nav class="block-logo">
           <ul class="site-nav">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link site-nav__link--current">Студія</a>
@@ -47,21 +46,20 @@
             </li>
             <li class="site-nav__item"><a href="" class="site-nav__link">Контакти</a></li>
           </ul>
-        <ul class="auth-nav">
-          <li class="auth-nav__item">
+          <ul class="auth-nav">
+           <li class="auth-nav__item">
             <a href="mailto:info@devstudio.com" class="auth-nav__link auth-nav__mail">
               <svg class="auth-nav__icon icon-envelope">
                <use href="./images/icons.svg#icon-envelope"></use>
                   </svg> info@devstudio.com</a>
-          </li>
-          <li class="auth-nav__item">
+            </li>
+            <li class="auth-nav__item">
             <a href="tel:+380961111111" class="auth-nav__link auth-nav__tel">
               <svg  class="auth-nav__icon icon-phone">
                 <use href="./images/icons.svg#icon-phone"></use>
                   </svg> +38 096 111 11 11</a>
-          </li>
-        </ul>
-      </nav>
+            </li>
+         </ul>
 
         <ul class="socialtext-list list">
           <li class="socialtext-list__item">
@@ -185,7 +183,19 @@
         <h2 class="section__title">Наша команда</h2>
         <ul class="team">
             <li class="team__item">
-                <img srcset="
+              <picture>
+                <source srcset="./images/IgorDemianenko@mobile1x.jpeg 450w, 
+                ./images/IgorDemianenko@mobile2x.jpeg 900w" 
+                media="(max-width: 767px)" sizes="(min-width: 480px) 480px, 100vw">
+                <source srcset="./images/IgorDemianenko@tablet1x.jpeg 800w, 
+                ./images/IgorDemianenko@tablet2x.jpeg 1600w" 
+                media="(min-width: 768px)" sizes="(min-width: 800px) 800px, 100vw">
+                <source srcset="./images/IgorDemianenko@pc1x.jpeg 1200w, 
+                ./images/IgorDemianenko@pc2x.jpeg 2400w" 
+                media="(min-width: 1200px)" sizes="(min-width: 1200px) 1200px, 100vw">
+                <img src="./images/IgorDemianenko@pc1x.jpeg" alt="Igor Demianenko" class="thumb__img">
+              </picture>
+                <!-- <img srcset="
                   ./images/IgorDemianenko@pc1x.jpeg          270w,
                   ./images/IgorDemianenko@tablet1x.jpeg   354w,
                   ./images/IgorDemianenko@mobile1x.jpeg   450w,
@@ -194,7 +204,7 @@
                   ./images/IgorDemianenko@mobile2x.jpeg 900w
                 " 
                 sizes="(min-width: 1170px) 270px, (min-width: 481px) 354px, 450px" 
-                src="./images/IgorDemianenko@pc1x.jpeg" alt="Igor Demianenko" class="thumb__img">
+                src="./images/IgorDemianenko@pc1x.jpeg" alt="Igor Demianenko" class="thumb__img"> -->
                 <div class="team__thumb"><h3 class="team__title">Ігор Дем'яненко</h3>
                 <p class="team__text">Product Designer</p>
                 <ul class="socialnet">
@@ -222,16 +232,18 @@
               
             </li>
             <li class="team__item">
-              <img srcset="
-              ./images/OlgaRepina@pc1x.jpeg          270w,
-              ./images/OlgaRepina@tablet1x.jpeg   354w,
-              ./images/OlgaRepina@mobile1x.jpeg   450w,
-              ./images/OlgaRepina@pc2x.jpeg        540w,
-              ./images/OlgaRepina@tablet2x.jpeg 708w,
-              ./images/OlgaRepina@mobile2x.jpeg 900w
-            " 
-            sizes="(min-width: 1170px) 270px, (min-width: 481px) 354px, 450px" 
-            src="./images/OlgaRepina@pc1x.jpeg" alt="Olga Repina" class="thumb__img">
+              <picture>
+                <source srcset="./images/OlgaRepina@mobile1x.jpeg 450w, 
+                ./images/OlgaRepina@mobile2x.jpeg 900w" 
+                media="(max-width: 767px)" sizes="(min-width: 480px) 480px, 100vw">
+                <source srcset="./images/OlgaRepina@tablet1x.jpeg 800w, 
+                ./images/OlgaRepina@tablet2x.jpeg 1600w" 
+                media="(min-width: 768px)" sizes="(min-width: 800px) 800px, 100vw">
+                <source srcset="./images/OlgaRepina@pc1x.jpeg 1200w, 
+                ./images/OlgaRepina@pc2x.jpeg 2400w" 
+                media="(min-width: 1200px)" sizes="(min-width: 1200px) 1200px, 100vw">
+                <img src="./images/OlgaRepina@pc1x.jpeg" alt="Olga Repina" class="thumb__img">
+              </picture>
             <div class="team__thumb"><h3 class="team__title">Ольга Рєпіна</h3>
                 <p class="team__text">Frontend Developer</p>
                 <ul class="socialnet">
@@ -258,16 +270,18 @@
                 </ul></div>
             </li>
             <li class="team__item">
-              <img srcset="
-              ./images/MikolaTarasov@pc1x.jpeg          270w,
-              ./images/MikolaTarasov@tablet1x.jpeg   354w,
-              ./images/MikolaTarasov@mobile1x.jpeg   450w,
-              ./images/MikolaTarasov@pc2x.jpeg        540w,
-              ./images/MikolaTarasov@tablet2x.jpeg 708w,
-              ./images/MikolaTarasov@mobile2x.jpeg 900w
-            " 
-            sizes="(min-width: 1170px) 270px, (min-width: 481px) 354px, 450px" 
-            src="./images/MikolaTarasov@pc1x.jpeg" alt="Mikola Tarasov" class="thumb__img">
+              <picture>
+                <source srcset="./images/MikolaTarasov@mobile1x.jpeg 450w, 
+                ./images/MikolaTarasov@mobile2x.jpeg 900w" 
+                media="(max-width: 767px)" sizes="(min-width: 480px) 480px, 100vw">
+                <source srcset="./images/MikolaTarasov@tablet1x.jpeg 800w, 
+                ./images/MikolaTarasov@tablet2x.jpeg 1600w" 
+                media="(min-width: 768px)" sizes="(min-width: 800px) 800px, 100vw">
+                <source srcset="./images/MikolaTarasov@pc1x.jpeg 1200w, 
+                ./images/MikolaTarasov@pc2x.jpeg 2400w" 
+                media="(min-width: 1200px)" sizes="(min-width: 1200px) 1200px, 100vw">
+                <img src="./images/MikolaTarasov@pc1x.jpeg" alt="Mikola Tarasov" class="thumb__img">
+              </picture>
             <div class="team__thumb"><h3 class="team__title">Микола Тарасов</h3>
                 <p class="team__text">Marketing</p>
                 <ul class="socialnet">
@@ -294,16 +308,18 @@
                 </ul></div>
             </li>
             <li class="team__item">
-              <img srcset="
-              ./images/MihailoErmakov@pc1x.jpeg          270w,
-              ./images/MihailoErmakov@tablet1x.jpeg   354w,
-              ./images/MihailoErmakov@mobile1x.jpeg   450w,
-              ./images/MihailoErmakov@pc2x.jpeg        540w,
-              ./images/MihailoErmakov@tablet2x.jpeg 708w,
-              ./images/MihailoErmakov@mobile2x.jpeg 900w
-            " 
-            sizes="(min-width: 1170px) 270px, (min-width: 481px) 354px, 450px" 
-            src="./images/MihailoErmakov@pc1x.jpeg" alt="Mihailo Ermakov" class="thumb__img">
+              <picture>
+                <source srcset="./images/MihailoErmakov@mobile1x.jpeg 450w, 
+                ./images/MihailoErmakov@mobile2x.jpeg 900w" 
+                media="(max-width: 767px)" sizes="(min-width: 480px) 480px, 100vw">
+                <source srcset="./images/MihailoErmakov@tablet1x.jpeg 800w, 
+                ./images/MihailoErmakov@tablet2x.jpeg 1600w" 
+                media="(min-width: 768px)" sizes="(min-width: 800px) 800px, 100vw">
+                <source srcset="./images/MihailoErmakov@pc1x.jpeg 1200w, 
+                ./images/MihailoErmakov@pc2x.jpeg 2400w" 
+                media="(min-width: 1200px)" sizes="(min-width: 1200px) 1200px, 100vw">
+                <img src="./images/MihailoErmakov@pc1x.jpeg" alt="Mihailo Ermakov" class="thumb__img">
+              </picture>
             <div class="team__thumb"><h3 class="team__title">Михайло Єрмаков</h3>
                 <p class="team__text">UI Designer</p>
                 <ul class="socialnet">

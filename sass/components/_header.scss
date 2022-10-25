@@ -19,14 +19,20 @@
   }
 }
 
-.block-logo {
-@media screen and (min-width: 768px) {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+// .block-logo {
+//   @media screen and (min-width: 320px) and (max-width: 767px) {
+//     display: flex;
+//     flex-direction: column;
+//    justify-content: space-between;
+//       } 
 
-}
-}
+// @media screen and (min-width: 768px) {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+
+// }
+// }
 
 .menu-toggle {
 position: absolute;
@@ -48,11 +54,25 @@ border: none;
 
 
 .site-nav {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    font-weight: 500;
+    font-size: 27px;
+    line-height: calc(30 / 25);
+    letter-spacing: 0.02em;
+    margin-bottom: auto;
+    } 
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      font-weight: 500;
+      font-size: 40px;
+      line-height: calc(47 / 40);
+      letter-spacing: 0.02em;      }
+  
+    
 
   @media screen and (max-width: 767px) {
-    // margin-top: 48px;
-    // margin-bottom: 302px;
-  }
+margin-bottom: auto;  
+}
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -89,10 +109,10 @@ border: none;
 
 .site-nav__link {
 
-  @media screen and (max-width: 767px) {
-    font-size: 40px;
-    line-height: calc(47 / 40);
-  }
+  // @media screen and (max-width: 767px) {
+  //   font-size: 40px;
+  //   line-height: calc(47 / 40);
+  // }
 
   @media screen and (min-width: 768px) {
     position: relative;
@@ -141,15 +161,15 @@ border: none;
 .auth-nav {
   display: flex;
 
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
 }
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    flex-direction: column-reverse;
-}
+//   @media screen and (min-width: 480px) and (max-width: 767px) {
+//     flex-direction: column-reverse;
+// }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-direction: column;
@@ -200,7 +220,7 @@ padding-bottom: 10px;  }
     letter-spacing: 0.02em;
     margin-bottom: 32px;
     color: var(--accent-color);
-    padding-top: 315px;
+    // padding-top: 315px;
 
   }
 
@@ -210,7 +230,7 @@ padding-bottom: 10px;  }
     letter-spacing: 0.02em;
     margin-bottom: 32px;
     color: var(--accent-color);
-    padding-top: 315px;
+    // padding-top: 315px;
   }
 
   @media screen and (min-width: 1200px) {
